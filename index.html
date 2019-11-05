@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="meuModulo">
+<head>
+	<title>Angular Sample</title>
+	<style>
+	div { color: #0000ff; background-color: #EAE6F9; border: solid #BBBBBB 1px; height: 200px; width: 90%; margin: 0px auto; padding: 10px; }
+	</style>
+</head>
+<body ng-controller="indexController">
+
+<h2>{{title}}</h2>
+<div>
+	<p>{{content}}</p>
+</div>
+
+<script src="lib/angular/angular.min.js"></script>
+<script type="text/javascript">
+
+	angular.module("meuModulo",[])
+	.controller("indexController", function($scope){
+		$scope.title   = "Sistema AngularJS";
+		$scope.content = "Pequeno Modulo criado com AngularJS para exemplificar seu funcionamento.";
+	});
+
+</script>
+</body>
+</html>
